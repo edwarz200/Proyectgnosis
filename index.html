@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="assets/iconsalud.png">
+    <title>GNOSIS</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="materialize/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <ul id="dropdown1" class="dropdown-content">
+            <li><a href="#!">Inglés</a></li>
+            <li class="divider"></li>
+            <li><a href="#!">Español</a></li>
+        </ul>
+        <ul id="dropdown1" class="dropdown-content">
+            <li><a href="#!">one</a></li>
+            <li><a href="#!">two</a></li>
+            <li class="divider"></li>
+            <li><a href="#!">three</a></li>
+        </ul>
+        <nav class="nav-extended">
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo">
+                    <i class="iconocompleto">
+                        <img src="assets/libro.jpg" class="iconolibro">
+                    </i> GNOSIS</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <!-- <li><a href="sass.html">Sass</a></li>
+                    <li><a href="badges.html">Components</a></li> -->
+                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Idioma<i class="material-icons right">arrow_drop_down</i></a></li>
+                </ul>
+            </div>
+            <div class="nav-content">
+                <ul class="tabs tabs-transparent">
+                    <li class="tab"><a href="#test1">Inicio</a></li>
+                    <li class="tab"><a class="active" href="#test2">Quienes Somos?</a></li>
+                    <li class="tab disabled"><a href="#test3">Diccionario</a>></li>
+                    <li class="tab"><a href="#test4">Test </a></li>
+                </ul>
+            </div>
+        </nav>
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="sass.html">Sass</a></li>
+            <li><a href="badges.html">Components</a></li>
+            <li><a href="collapsible.html">Javascript</a></li>
+            <li><a href="mobile.html">Mobile</a></li>
+        </ul>
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="sass.html">Sass</a></li>
+            <li><a href="badges.html">Components</a></li>
+            <li><a href="collapsible.html">JavaScript</a></li>
+        </ul>
+
+        <div id="test1" class="col s12">Test 1</div>
+        <div id="test2" class="col s12">Test 2</div>
+        <div id="test3" class="col s12">Test 3</div>
+        <div id="test4" class="col s12">Test 4</div>
+    </header>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase.js"></script>
+    <script src="materialize/js/materialize.min.js"></script>
+    <script src="js/mainBD.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
