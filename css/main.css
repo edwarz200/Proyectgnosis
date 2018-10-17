@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Acme|Amatic+SC');
+
+
 li {
     list-style: none;
 }
@@ -159,6 +161,9 @@ h6 {
 @media only screen and (max-width:992px) {
     .mostrar {
         display: block;
+    }
+    .img-fluid{
+        background-attachment: initial;
     }
 }
 
