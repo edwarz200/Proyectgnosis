@@ -16,8 +16,12 @@
 
 <body>
     <header>
-
         <ul id="dropdown1" class="dropdown-content">
+            <li><a href="#!">Inglés</a></li>
+            <li class="divider"></li>
+            <li><a href="#!">Español</a></li>
+        </ul>
+        <ul id="dropdown2" class="dropdown-content">
             <li><a href="#!">Inglés</a></li>
             <li class="divider"></li>
             <li><a href="#!">Español</a></li>
@@ -29,11 +33,15 @@
                 </a>
                 <p class="center">Zully</p>
             </li>
+            <li class="mostrar"><a href="#inicio">Inicio</a></li>
+            <li class="mostrar"><a class="dropdown-trigger" href="#!" data-target="dropdown2">Idioma<i class="material-icons right">arrow_drop_down</i></a></li>
             <li><a href="#"> Mi plataforma</a></li>
             <li><a href="#">Diccionario</a></li>
             <li><a href="#">Test</a></li>
             <li><a href="#">Foro</a></li>
             <li><a href="#">Configuración</a></li>
+            <li class="mostrar"><a href="#quienes_somos">¿Quienes Somos?</a></li>
+            <li class="mostrar"><a href="#contactanos">Contactanos</a></li>
             <li><a href="#">Cerrar Sesión</a></li>
         </ul>
         <div class="navbar-fixed">
@@ -44,13 +52,11 @@
                         <i class="iconocompleto">
                             <img src="assets/iconognosis.png" class="iconolibro">
                         </i> GNOSIS</a>
-                    <!-- <ul class="tabs tabs-transparent"> -->
                     <ul class="right hide-on-med-and-down">
                         <li class="tab"><a href="#inicio">Inicio</a></li>
                         <li class="tab"><a class="active" href="#quienes_somos">¿Quienes Somos?</a></li>
                         <li class="tab disabled"><a href="#contactanos">Contactanos</a></li>
                         <li class="tab"><a href="#">Inicia sesión</a></li>
-                        <!-- <li class="tab"><a href="#">Registrate</a></li> -->
                         <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Idioma<i class="material-icons right">arrow_drop_down</i></a></li>
                     </ul>
                 </div>
@@ -59,33 +65,47 @@
 
     </header>
     <div class="content">
-        <section class="center slogan1">
-            <h3 class="slogan grey-text text-darken-1">"Alcanza tus sueños y llénalos de conocimiento"</h3>
-        </section>
-        <div class="carousel z-depth-2">
-            <a class="carousel-item" href="#one!"><img class="arregladoimg" src="assets/a.png"></a>
-            <a class="carousel-item" href="#two!"><img class="arregladoimg" src="assets/b.png"></a>
-            <a class="carousel-item" href="#five!"><img class="arregladoimg" src="assets/microsoft_hololens-660x420.png"></a>
-        </div>
-        <nav>
-            <div class="nav-wrapper">
-                <ul id="" class="row right white" style="width:100%">
-                    <li class="col xl4 m4 s4 grey"><a class="a1 a2" href="sass.html">Noticias</a></li>
-                    <li class="col xl4 m4 s4 grey"><a class="a1" href="badges.html">Investigaciones</a></li>
-                    <li class="col xl4 m4 s4 grey"><a class="a1" href="collapsible.html">Desarrollo de IA</a></li>
-                </ul>
+        <div>
+            <section class="center slogan1">
+                <h3 class="slogan grey-text text-darken-1">"Alcanza tus sueños y llénalos de conocimiento"</h3>
+            </section>
+            <div class="carousel z-depth-2">
+                <div class="corousel1">
+                    <a class="carousel-item" href="#one!"><img class="arregladoimg" src="assets/a.png"></a>
+                    <a class="carousel-item" href="#two!"><img class="arregladoimg" src="assets/b.png"></a>
+                    <a class="carousel-item" href="#five!"><img class="arregladoimg" src="assets/microsoft_hololens-660x420.png"></a>
+                </div>
             </div>
-        </nav>
+
+            <ul id="dropdown3" class="dropdown-content">
+                <li class="col xl12 m12 s12 grey"><a class="white-text" href="#">Noticias</a></li>
+                <li class="divider white"></li>
+                <li class="col xl12 m12 s12 grey"><a class="white-text" href="#">Investigaciones</a></li>
+                <li class="divider white"></li>
+                <li class="col xl12 m12 s12 grey"><a class="white-text" href="#">Desarrollo de IA</a></li>
+            </ul>
+            <nav>
+                <div class="nav-wrapper">
+                    <ul id="" class="row right white" style="width:100%">
+                        <li class="col xl4 m4 s4 grey mostrar3"><a class="a1 a2" href="#">Noticias</a></li>
+                        <li class="col xl4 m4 s4 grey mostrar3"><a class="a1" href="#">Investigaciones</a></li>
+                        <li class="col xl4 m4 s4 grey mostrar3"><a class="a1" href="#">Desarrollo de IA</a></li>
+                        <li class="mostrar2 col xl12 m12 s12"><a class="dropdown-trigger grey" href="#!" data-target="dropdown3">Mas Información<i class="material-icons right">arrow_drop_down</i></a></li>
+                    </ul>
+                </div>
+            </nav>
+
+        </div>
 
         <!-- Incio info 1 -->
         <section class="about-info-area section-gap">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col xl6 m6 s6 left">
+                    <div class="col xl6 m6 s12 left">
                         <img class="img-fluid" src="assets/microscopio.jpg" alt="">
                     </div>
                     <h6>SOBRE NOSOTROS</h6>
-                    <div class="col xl6 right">
+                    <div class="col xl6 m6 s12 right">
                         <h1></h1>
                         <p>
                             Gnosis está encaminada en facilitarle al estudiante el material de estudio, al igual que la
@@ -105,13 +125,13 @@
 
         <!-- Incio info 2 -->
         <section class="about-info-area section-gap">
-            <div class="container">
+            <div class="">
                 <div class="row align-items-center">
-                    <div class="col xl6 m6 s6 right">
+                    <div class="col xl6 m12 s12 right">
                         <img class="img-fluid" src="assets/6.png" alt="">
                     </div>
                     <h6>Sobre los estudios del cuerpo humano</h6>
-                    <div class="col xl6 left">
+                    <div class="col xl6 m12 s12 left">
                         <h1>Graficos en HD</h1>
                         <p>
                             Esta aplicación estudia todo cuerpo humano es una estructura impresionante y maravillosa
@@ -134,7 +154,7 @@
                         <div class="col xl12 m12 s12">
                             <h6 class="text-uppercase">Necesitas saber qué</h6>
                             <h1>Nuestros objetivos</h1>
-                            <p>
+                            <p class="left1">
                                 Diseñar e implementar una plataforma la cuál sea compatible con cualquier sistema
                                 operativo, y facilite la información, que funcione como herramienta de aprendizaje de
                                 conceptos técnicos y propios de la medicina. Dirigida especialmente a las personas que
@@ -157,11 +177,9 @@
                             </div>
                         </div>
                     </div>
-                </div>
+            </section>
         </div>
-        </section>
-        <!-- Inicio info 2 -->
-
+    </div>
     </div>
 
     <footer class="page-footer black">

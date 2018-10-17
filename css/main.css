@@ -1,32 +1,28 @@
 @import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Acme|Amatic+SC');
-body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-}
-
-li{
+li {
     list-style: none;
 }
 
-.lifooter{
-    margin-top: 5px !important; 
-    margin-bottom:  5px !important;
+.lifooter {
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
 }
 
-.gnosispage{
+.gnosispage {
     transition: all .15s linear;
     font-size: 12px;
     color: #b2dfdb;
 }
-.gnosispage:hover, .fab:hover{
+
+.gnosispage:hover, .fab:hover {
     color: #253f7b !important;
 }
 
-.a1 a::after{
+.a1 a::after {
     border-right: solid 2px #7a76769d;
     height: 20px;
 }
+
 main {
     flex: 1 0 auto;
 }
@@ -48,7 +44,6 @@ main {
     height: auto;
     width: 100px;
     height: 100px !important;
-    /* border: solid 2px black; */
     overflow: hidden;
 }
 
@@ -62,22 +57,22 @@ main {
     height: 74px !important;
     overflow: hidden;
 }
-h6{
+
+h6 {
     color: #797979;
     font-size: 14px !important;
 }
 
-.lisep{
-    width: 900px;
-    margin: 15px 85px;
+.lisep {
+    margin: 2% 7%;
 }
 
 .img-fluid {
     width: 100%;
-    background: url("../assets/objetivos.jpg") fixed no-repeat;
+    background: url("../assets/objetivos.jpg") fixed center no-repeat;
     background-size: cover;
-    min-width: 600px;
     min-height: 30%;
+    width: 100%;
 }
 
 .about-info-area {
@@ -85,12 +80,13 @@ h6{
     margin-bottom: 130px;
 }
 
-.gnosisobj{
+.gnosisobj {
     position: relative;
     color: white;
     background-color: #2a2a2ac5;
 }
-.quitarmarginbottom{
+
+.quitarmarginbottom {
     margin-bottom: 0px !important;
 }
 
@@ -118,7 +114,6 @@ h6{
 .slogan {
     margin: 0;
     font-family: 'Amatic SC', cursive;
-
 }
 
 .iconoplaneta {
@@ -151,6 +146,34 @@ h6{
 .arregladoimg {
     height: 100%;
     width: 100% !important;
+}
+
+.mostrar {
+    display: none;
+}
+
+.mostrar2 {
+    display: none;
+}
+
+@media only screen and (max-width:992px) {
+    .mostrar {
+        display: block;
+    }
+}
+
+@media only screen and (max-width:450px) {
+    .mostrar2 {
+        display: block;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    .mostrar3 {
+        display: none !important;
+    }
+    .left1 {
+        text-align: left;
+    }
 }
 
 @media only screen and (max-width:400px) {
