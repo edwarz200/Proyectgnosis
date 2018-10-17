@@ -10,69 +10,214 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="materialize/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
 </head>
 
 <body>
     <header>
+
         <ul id="dropdown1" class="dropdown-content">
             <li><a href="#!">Inglés</a></li>
             <li class="divider"></li>
             <li><a href="#!">Español</a></li>
         </ul>
-        <ul id="dropdown1" class="dropdown-content">
-            <li><a href="#!">one</a></li>
-            <li><a href="#!">two</a></li>
-            <li class="divider"></li>
-            <li><a href="#!">three</a></li>
+        <ul class="sidenav" id="mobile-demo123">
+            <li>
+                <a href="#" class="imgperfil center">
+                    <img class="fotodeperfil" src="assets/foto-de-perfil.jpg" alt="">
+                </a>
+                <p class="center">Zully</p>
+            </li>
+            <li><a href="#"> Mi plataforma</a></li>
+            <li><a href="#">Diccionario</a></li>
+            <li><a href="#">Test</a></li>
+            <li><a href="#">Foro</a></li>
+            <li><a href="#">Configuración</a></li>
+            <li><a href="#">Cerrar Sesión</a></li>
         </ul>
-        <nav class="nav-extended">
+        <div class="navbar-fixed">
+            <nav id="nav" class="z-depth-0 kkkblue">
+                <div class="nav-wrapper">
+                    <a href="#" data-target="mobile-demo123" class="sidenav-trigger menu_e"><i class="material-icons">menu</i></a>
+                    <a href="#" class="brand-logo gn">
+                        <i class="iconocompleto">
+                            <img src="assets/iconognosis.png" class="iconolibro">
+                        </i> GNOSIS</a>
+                    <!-- <ul class="tabs tabs-transparent"> -->
+                    <ul class="right hide-on-med-and-down">
+                        <li class="tab"><a href="#inicio">Inicio</a></li>
+                        <li class="tab"><a class="active" href="#quienes_somos">¿Quienes Somos?</a></li>
+                        <li class="tab disabled"><a href="#contactanos">Contactanos</a></li>
+                        <li class="tab"><a href="#">Inicia sesión</a></li>
+                        <!-- <li class="tab"><a href="#">Registrate</a></li> -->
+                        <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Idioma<i class="material-icons right">arrow_drop_down</i></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+    </header>
+    <div class="content">
+        <section class="center slogan1">
+            <h3 class="slogan grey-text text-darken-1">"Alcanza tus sueños y llénalos de conocimiento"</h3>
+        </section>
+        <div class="carousel z-depth-2">
+            <a class="carousel-item" href="#one!"><img class="arregladoimg" src="assets/a.png"></a>
+            <a class="carousel-item" href="#two!"><img class="arregladoimg" src="assets/b.png"></a>
+            <a class="carousel-item" href="#five!"><img class="arregladoimg" src="assets/microsoft_hololens-660x420.png"></a>
+        </div>
+        <nav>
             <div class="nav-wrapper">
-                <a href="#" class="brand-logo">
-                    <i class="iconocompleto">
-                        <img src="assets/libro.jpg" class="iconolibro">
-                    </i> GNOSIS</a>
-                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <!-- <li><a href="sass.html">Sass</a></li>
-                    <li><a href="badges.html">Components</a></li> -->
-                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Idioma<i class="material-icons right">arrow_drop_down</i></a></li>
-                </ul>
-            </div>
-            <div class="nav-content">
-                <ul class="tabs tabs-transparent">
-                    <li class="tab"><a href="#test1">Inicio</a></li>
-                    <li class="tab"><a class="active" href="#test2">Quienes Somos?</a></li>
-                    <li class="tab disabled"><a href="#test3">Diccionario</a>></li>
-                    <li class="tab"><a href="#test4">Test </a></li>
+                <ul id="" class="row right white" style="width:100%">
+                    <li class="col xl4 m4 s4 grey"><a class="a1 a2" href="sass.html">Noticias</a></li>
+                    <li class="col xl4 m4 s4 grey"><a class="a1" href="badges.html">Investigaciones</a></li>
+                    <li class="col xl4 m4 s4 grey"><a class="a1" href="collapsible.html">Desarrollo de IA</a></li>
                 </ul>
             </div>
         </nav>
-        <ul class="sidenav" id="mobile-demo">
-            <li><a href="sass.html">Sass</a></li>
-            <li><a href="badges.html">Components</a></li>
-            <li><a href="collapsible.html">Javascript</a></li>
-            <li><a href="mobile.html">Mobile</a></li>
-        </ul>
-        <ul class="sidenav" id="mobile-demo">
-            <li><a href="sass.html">Sass</a></li>
-            <li><a href="badges.html">Components</a></li>
-            <li><a href="collapsible.html">JavaScript</a></li>
-        </ul>
 
-        <div id="test1" class="col s12">Test 1</div>
-        <div id="test2" class="col s12">Test 2</div>
-        <div id="test3" class="col s12">Test 3</div>
-        <div id="test4" class="col s12">Test 4</div>
-    </header>
+        <!-- Incio info 1 -->
+        <section class="about-info-area section-gap">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col xl6 m6 s6 left">
+                        <img class="img-fluid" src="assets/microscopio.jpg" alt="">
+                    </div>
+                    <h6>SOBRE NOSOTROS</h6>
+                    <div class="col xl6 right">
+                        <h1></h1>
+                        <p>
+                            Gnosis está encaminada en facilitarle al estudiante el material de estudio, al igual que la
+                            organización de archivos siendo está de manera gratuita, vimos la necesidad de que está
+                            surgiera ya que muchas personas no cuentan con el índice económico requerido para estudiar
+                            medicina y muchas veces puede que les alcance para matricularse pero aun así necesitan para
+                            sus materiales, Gnosis es la nueva agenda de estudio la única que necesitaras pues cuenta
+                            con cientos de funciones y cuenta con miles de gráficas, al igual que contiene varios
+                            campos para distintos público, en efecto pueden manejarla profesores, alumnos y personas
+                            que quieran aprender de medicina.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Fin info -->
 
+        <!-- Incio info 2 -->
+        <section class="about-info-area section-gap">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col xl6 m6 s6 right">
+                        <img class="img-fluid" src="assets/6.png" alt="">
+                    </div>
+                    <h6>Sobre los estudios del cuerpo humano</h6>
+                    <div class="col xl6 left">
+                        <h1>Graficos en HD</h1>
+                        <p>
+                            Esta aplicación estudia todo cuerpo humano es una estructura impresionante y maravillosa
+                            integrado con organismos que contiene más de 10 billones de células, la unidad básica de la
+                            vida. También han incluido los sistemas principales del cuerpo humano, mostrado con
+                            información gran cantidad de gráficos 2D y animaciones en 3D también. Es una enciclopedia
+                            del cuerpo humano.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Fin info -->
 
+        <!-- Inicio info 3-->
+        <div class="img-fluid">
+            <section class="about-info-area pb-120 gnosisobj quitarmarginbottom">
+                <div class="container">
+                    <div class="row center-align quitarmarginbottom">
+                        <div class="col xl12 m12 s12">
+                            <h6 class="text-uppercase">Necesitas saber qué</h6>
+                            <h1>Nuestros objetivos</h1>
+                            <p>
+                                Diseñar e implementar una plataforma la cuál sea compatible con cualquier sistema
+                                operativo, y facilite la información, que funcione como herramienta de aprendizaje de
+                                conceptos técnicos y propios de la medicina. Dirigida especialmente a las personas que
+                                hagan parte de EPS, empresas, instituciones educativas, etc. Siendo desarrollada por
+                                medio de lenguajes de programación.
+                            </p>
+                            <div class="list-wrap container">
+                                <ul>
+                                    <li class="lisep left">* Realizar un estudio estadístico acerca de cómo les
+                                        gustaría que fuese la
+                                        aplicación y la forma en que satisfacer las necesidades de usuario.</li>
+                                    <li class="lisep left">* Divulgar información de la existencia de la aplicación por
+                                        medio de anuncios
+                                        para así obtener colaboraciones de las instituciones educativas.</li>
+                                    <li class="lisep left">* Lograr que la aplicación se presente de manera gratuita a
+                                        los usuarios,
+                                        obteniendo ganancias a partir de convenios y anuncios, para así facilitarles el
+                                        progreso de sus estudios.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        </section>
+        <!-- Inicio info 2 -->
 
+    </div>
+
+    <footer class="page-footer black">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Contactanos</h5>
+                    <li class="row lifooter">
+                        <h6 class="col xl2 m2 s2">E-MAIL:</h6>
+                        <h6 class="grey-text text-lighten-4 col xl8 m8 s8 left">Gnosis01@gmail.com</h6>
+                    </li>
+                    <li class="row lifooter">
+                        <h6 class="col xl2 m2 s2">Celular:</h6>
+                        <h6 class="grey-text text-lighten-4 col xl8 m8 s8 left">3043455047</h6>
+                    </li>
+                    <li class="row lifooter">
+                        <h6 class="col xl2 m2 s2">Telefono:</h6>
+                        <h6 class="grey-text text-lighten-4 col xl8 m8 s8 left">7238595</h6>
+                    </li>
+                    <li class="row lifooter">
+                        <h6 class="col xl2 m2 s2">Visitanos:</h6>
+                        <h6 class="grey-text text-lighten-4 col xl8 m8 s8 left">Cra. 7D # 28-21</h6>
+                    </li>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <p class="white-text">Nuestras redes sociales</p>
+                    <ul class="row">
+                        <li class="lifooter col xl12 m12 s12"><a class="grey-text text-lighten-3" href="https://www.facebook.com/Gnosis-3806110578928">
+                                <h6 class="col xl3 m3 s3">Facebook:</h6> <i class="fab fa-facebook-f fa-lg"></i>
+                            </a></li>
+                        <li class="lifooter col xl12 m12 s12"><a class="grey-text text-lighten-3" href="https://www.twitter.com/Gnosis-3806110578928">
+                                <h6 class="col xl3 m3 s3">Twitter:</h6><i class="fab fa-twitter fa-lg"></i>
+                            </a></li>
+                        <li class="lifooter col xl12 m12 s12"><a class="grey-text text-lighten-3" href="https://www.instagram.com/Gnosis-3806110578928">
+                                <h6 class="col xl3 m3 s3">Instagram:</h6><i class="fab fa-instagram fa-lg"></i>
+                            </a></li>
+                        <li class="lifooter col xl12 m12 s12"><a class="grey-text text-lighten-3" href="https://www.githib.com/Gnosis-3806110578928">
+                                <h6 class="col xl3 m3 s3">Facebook:</h6><i class="fab fa-github fa-lg"></i>
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2014 Copyright of Gnosis
+                <a class=" right gnosispage" href="www.Gnosis.edu.co">www.Gnosis.edu.co</a>
+            </div>
+        </div>
+    </footer>
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
     <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase.js"></script>
-    <script src="materialize/js/materialize.min.js"></script>
+    <script src="materialize/js/materialize.js"></script>
     <script src="js/mainBD.js"></script>
     <script src="js/main.js"></script>
 </body>
