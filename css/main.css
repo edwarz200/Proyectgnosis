@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Acme|Amatic+SC');
 
+
 li {
     list-style: none;
 }
@@ -68,22 +69,13 @@ h6 {
     margin: 2% 7%;
 }
 
-
-body:before {
-    content: "";
-    display: block;
-    position: fixed;
-    left: 0;
-    top: 0;
+.img-fluid {
     width: 100%;
-    min-height: 30%;
-    z-index: -10;
-    background: url("../assets/objetivos.jpg") center center no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    background: url("../assets/objetivos.jpg") fixed center no-repeat;
     background-size: cover;
-  }
+    min-height: 30%;
+    width: 100%;
+}
 
 .about-info-area {
     margin-top: 130px;
